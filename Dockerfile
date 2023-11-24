@@ -1,4 +1,4 @@
-ARG VERSION=unspecified
+ARG VERSION=latest
 
 FROM debian:bullseye-slim
 

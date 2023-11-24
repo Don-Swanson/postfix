@@ -1,0 +1,11 @@
+version: "2.1"
+services:
+  postfix:
+    image: ghcr.io/don-swanson/postfix:main
+    container_name: postfix
+    volumes:
+      - ./postfix-config:/config
+    ports:
+      - 25:25
+      - 587:587
+    restart: unless-stopped
